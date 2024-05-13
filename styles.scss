@@ -1,0 +1,132 @@
+$wid: calc(100vw / 6 - 0.3em);
+$col: rgb(171, 226, 42);
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-image: url(/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    width: 100%;
+    background-color: $col;
+    height: 60px;
+}
+.cont {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list {
+    height: 100%;
+    width: 100%;
+    border: 2px solid;
+    border-left-width: 0;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+h {
+    font-weight: bold;
+}
+.cat {
+    position: absolute;
+    top: 62px;
+    background-color:$col ;
+    width: $wid;
+    text-align: center;
+}
+.dop {
+    border: 2px solid;
+    border-top-width: 0;
+    display: none;
+}
+.act:hover > ul li {
+    display: block;
+}
+@media (max-width: 320px) {
+    header {
+        height: 62*6px;
+        
+    }
+    .cont {
+        display: inline-block;    }
+    .list {
+        border-top-width: 0;
+    }
+    .cat {
+        top:186px;
+        width: 100%;
+    }
+    .list{width: 100%;
+    }
+    .lii {
+        border:2px solid;
+        border-top-width: 0;
+        background-color: $col;
+        width: 20vw;
+        height: 7.5vh;
+    }
+    .container {
+        top: 62*6px-2;
+        width: 200px;
+    }
+}
+@media (max-width: 500px) {
+    .list {font-size: 18px;
+    }
+}
+li:hover {
+    background-color: #ffffff9d;
+
+    a {
+        color: chocolate;
+    }
+}
+.imag {
+    max-width: 25px;
+    max-height:25px;
+    padding: 19px 20px;
+    border: 2px solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    :hover {
+        cursor: pointer;
+    }
+}
+.container {
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
+    margin-top: 2px;
+    right: 0;
+    background-color:$col;
+    transform: rotate();
+    transition: 0.4s;
+}
+h:hover {
+    cursor: pointer;
+}
+.data {
+    font-size: 20px;
+    cursor: pointer;
+}
+.dd {
+    height: 150%;
+    width: 100%;
+    position: absolute;
+}
+.block {
+    position: absolute;
+    font-size: 10px;
+    top: 960px;
+}

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-image: url(/img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(171, 226, 42);
+  height: 60px;
+}
+
+.cont {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list {
+  height: 100%;
+  width: 100%;
+  border: 2px solid;
+  border-left-width: 0;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+h {
+  font-weight: bold;
+}
+
+.cat {
+  position: absolute;
+  top: 62px;
+  background-color: rgb(171, 226, 42);
+  width: calc(16.6666666667vw - 0.3em);
+  text-align: center;
+}
+
+.dop {
+  border: 2px solid;
+  border-top-width: 0;
+  display: none;
+}
+
+.act:hover > ul li {
+  display: block;
+}
+
+@media (max-width: 320px) {
+  header {
+    height: 372px;
+  }
+  .cont {
+    display: inline-block;
+  }
+  .list {
+    border-top-width: 0;
+  }
+  .cat {
+    top: 186px;
+    width: 100%;
+  }
+  .list {
+    width: 100%;
+  }
+  .lii {
+    border: 2px solid;
+    border-top-width: 0;
+    background-color: rgb(171, 226, 42);
+    width: 20vw;
+    height: 7.5vh;
+  }
+  .container {
+    top: 370px;
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .list {
+    font-size: 18px;
+  }
+}
+li:hover {
+  background-color: rgba(255, 255, 255, 0.6156862745);
+}
+li:hover a {
+  color: chocolate;
+}
+
+.imag {
+  max-width: 25px;
+  max-height: 25px;
+  padding: 19px 20px;
+  border: 2px solid;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.imag :hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 80vh;
+  width: 30vw;
+  position: absolute;
+  margin-top: 2px;
+  right: 0;
+  background-color: rgb(171, 226, 42);
+  transform: rotate();
+  transition: 0.4s;
+}
+
+h:hover {
+  cursor: pointer;
+}
+
+.data {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dd {
+  height: 150%;
+  width: 100%;
+  position: absolute;
+}
+
+.block {
+  position: absolute;
+  font-size: 10px;
+  top: 960px;
+}/*# sourceMappingURL=styles.css.map */
