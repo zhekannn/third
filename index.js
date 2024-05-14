@@ -10,6 +10,8 @@ server=http.createServer((req, res)=>{
         break
         case '.js': contentType='text/javascript'
         break
+        case '.json': contentType='text/json'
+        break
         default:
             contentType='text/html'
     }
