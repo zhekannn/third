@@ -5,7 +5,7 @@ let k=0
 img.addEventListener('click', ()=>{
     if((k%2)==0) {
         widjet.classList.add('container')
-        const prom =fetch('/js.json')
+        const prom =fetch('https://jsonplaceholder.typicode.com/users')
     .then(resp=> resp.json()).then(resp=>render(resp))
     }
     else {
